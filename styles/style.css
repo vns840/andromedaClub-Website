@@ -89,6 +89,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -133,6 +135,73 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  font-family: "Ubuntu", sans-serif;
+  background: #262533;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header a img {
+  width: 75px;
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+header ul a:hover {
+  color: #61ffca;
+}
+
+.main {
+  background-image: url(../assets/images/andromeda_main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.main .title_main {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #61ffca;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.main .title_main:hover {
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, #61ffca 0px 0px 20px, #61ffca 0px 0px 30px, #61ffca 0px 0px 40px, #61ffca 0px 0px 55px, #61ffca 0px 0px 75px;
+}
+.main .text_main {
+  margin: 3em 0;
+  color: #fff;
+  font-size: 1.5em;
+}
+.main .btn_main {
+  font-size: 1.5em;
+  border: 3px solid #61ffca;
+  color: #61ffca;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.9s;
+  text-transform: capitalize;
+}
+.main .btn_main:hover {
+  box-shadow: 5px 5px 27px 13px #61ffca;
+}
+
 .about {
   background-image: url(../assets/images/background_about.jpg);
   background-size: cover;
@@ -140,22 +209,23 @@ table {
   font-family: "Ubuntu", sans-serif;
   color: #fff;
 }
-.about .container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about .container .boximage_about,
-.about .container .boxtext_about {
+.about .boximage_about,
+.about .boxtext_about {
   width: 40%;
 }
-.about .container .boxtext_about .title_about {
+.about .boximage_about .profile_about {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+.about .boxtext_about .title_about {
   font-size: 3.5rem;
   text-transform: capitalize;
+  margin-bottom: 1rem;
 }
-.about .container .boxtext_about .title_about::before {
+.about .boxtext_about .title_about::before {
   content: "|";
   display: block;
   width: 20px;
@@ -163,15 +233,25 @@ table {
   float: left;
   margin: 0 100px 0 0;
 }
-.about .container .boxtext_about .text_about {
+.about .boxtext_about .text_about {
   font-size: 1.5rem;
   line-height: 1.9rem;
   text-align: center;
 }
-.about .profile_about {
-  max-width: 100%;
-  display: block;
-  border-radius: 50%;
-  height: 400px;
-  width: 400px;
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  background: #262533;
+  font-size: 1.2em;
+}
+.footer span {
+  color: #61ffca;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footer span:hover {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

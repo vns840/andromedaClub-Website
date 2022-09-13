@@ -1,6 +1,82 @@
 @import './sass/reset';
 @import './sass/variaveis-e-mixins';
 
+.container {
+  @include flex-center;
+}
+
+header {
+  font-family: $fonte-main;
+
+  a {
+    img {
+      width: 75px;
+    }
+  }
+
+  background: $pretoneo;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  ul {
+    display: flex;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+      margin-left: 10px;
+      transition: .5s;
+
+      &:hover {
+        color: $verdeneo;
+      }
+    }
+  }
+}
+
+.main {
+  background-image: url(../assets/images/andromeda_main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: $fonte-main;
+  text-align: center;
+
+  .title_main {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: $verdeneo;
+    cursor: pointer;
+    transition: .9s;
+
+    &:hover {
+      text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, $verdeneo 0px 0px 20px, $verdeneo 0px 0px 30px, $verdeneo 0px 0px 40px, $verdeneo 0px 0px 55px, $verdeneo 0px 0px 75px;
+    }
+  }
+
+  .text_main {
+    margin: 3em 0;
+    color: $white;
+    font-size: 1.5em;
+  }
+
+  .btn_main {
+    font-size: 1.5em;
+    border: 3px solid $verdeneo;
+    color: $verdeneo;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: .9s;
+    text-transform: capitalize;
+
+    &:hover {
+      box-shadow: 5px 5px 27px 13px $verdeneo;
+    }
+  }
+
+}
+
 .about {
 
   background-image: url(../assets/images/background_about.jpg);
@@ -9,48 +85,62 @@
   font-family: $fonte-main;
   color: $white;
 
-  .container {
-    width: 100vw;
-    height: 100vh;
-    @include flex-center;
-
-    .boximage_about,
-    .boxtext_about {
-      width: 40%;
-    }
-
-    .boxtext_about {
-
-      .title_about {
-        font-size: 3.5rem;
-        text-transform: capitalize;
-
-        &::before {
-          content: "|";
-          display: block;
-          width: 20px;
-          height: 20px;
-          float: left;
-          margin: 0 100px 0 0;
-        }
-      }
-
-      .text_about {
-        font-size: 1.5rem;
-        line-height: 1.9rem;
-        text-align: center;
-      }
-    }
-
+  .boximage_about,
+  .boxtext_about {
+    width: 40%;
   }
 
-  .profile_about {
-    max-width: 100%;
-    display: block;
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
+  .boximage_about {
+    .profile_about {
+      max-width: 100%;
+      display: block;
+      border-radius: 50%;
+      height: 400px;
+      width: 400px;
+    }
   }
 
+  .boxtext_about {
 
+    .title_about {
+      font-size: 3.5rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+
+      &::before {
+        content: "|";
+        display: block;
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin: 0 100px 0 0;
+      }
+    }
+
+    .text_about {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+      text-align: center;
+    }
+  }
+
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-family: $fonte-main;
+  color: $white;
+  background: $pretoneo;
+  font-size: 1.2em;
+
+  span {
+    color: $verdeneo;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
