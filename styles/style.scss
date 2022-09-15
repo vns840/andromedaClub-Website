@@ -36,6 +36,38 @@ header {
   }
 }
 
+.gallery {
+  background-color: $cinza;
+  text-align: center;
+  font-family: $fonte-main;
+  color: $pretoneo;
+
+  .title_gallery {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+
+  .text_gallery {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .boximage_gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    img {
+      display: block;
+      max-width: 100%;
+      width: 350px;
+      margin: 1em;
+
+    }
+  }
+}
+
 .main {
   background-image: url(../assets/images/andromeda_main.jpg);
   background-size: cover;
