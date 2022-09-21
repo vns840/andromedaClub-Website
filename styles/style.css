@@ -238,6 +238,7 @@ header ul a:hover {
 .about .boximage_about,
 .about .boxtext_about {
   width: 40%;
+  padding: 20px;
 }
 .about .boximage_about .profile_about {
   max-width: 100%;
@@ -248,16 +249,9 @@ header ul a:hover {
 }
 .about .boxtext_about .title_about {
   font-size: 3.5rem;
+  text-align: center;
   text-transform: capitalize;
   margin-bottom: 1rem;
-}
-.about .boxtext_about .title_about::before {
-  content: "|";
-  display: block;
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin: 0 100px 0 0;
 }
 .about .boxtext_about .text_about {
   font-size: 1.5rem;
@@ -316,4 +310,58 @@ header ul a:hover {
 }
 .footer span:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 380px) {
+  header {
+    flex-direction: column;
+  }
+  header a {
+    margin-bottom: 10px;
+  }
+  .about {
+    padding: 10px;
+  }
+  .about .boximage_about .profile_about {
+    width: 200px;
+    height: 200px;
+  }
+  .about .boximage_about,
+.about .boxtext_about {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 970px) {
+  .container {
+    display: block;
+  }
+  .main {
+    height: 70vh;
+  }
+  .main .boxmain {
+    padding: 26px;
+  }
+  .main .boxmain .title_main {
+    font-size: 3.5rem;
+  }
+  .about .boximage_about,
+.about .boxtext_about {
+    width: 100%;
+  }
+  .about .boximage_about img {
+    margin: 10px auto;
+  }
+  .about .boxtext_about .text_about {
+    width: 60%;
+    margin: 10px auto;
+  }
+  .contact .boxtext_contact {
+    text-align: center;
+  }
+  .contact .container {
+    height: 35vh;
+  }
+  .contact .container .boximage_contact {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
