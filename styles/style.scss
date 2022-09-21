@@ -158,6 +158,53 @@ header {
 
 }
 
+.contact {
+  font-family: $fonte-main;
+
+  .title_contact {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .boximage_contact {
+    padding: 20px;
+
+    img {
+      width: 480px;
+    }
+  }
+
+  .boxtext_contact {
+    padding: 20px;
+
+    ul {
+      margin-bottom: 20px;
+
+      li {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+    }
+
+    span {
+      margin-left: 10px;
+      cursor: pointer;
+
+    }
+
+    .logo_social {
+      width: 50px;
+
+      &:hover {
+        box-shadow: 5px 5px 27px 13px $verdeneo;
+      }
+    }
+  }
+
+}
+
 .footer {
   text-align: center;
   padding: 30px;

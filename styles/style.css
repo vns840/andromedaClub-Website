@@ -265,6 +265,42 @@ header ul a:hover {
   text-align: center;
 }
 
+.contact {
+  font-family: "Ubuntu", sans-serif;
+}
+.contact .title_contact {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+.contact .boximage_contact {
+  padding: 20px;
+}
+.contact .boximage_contact img {
+  width: 480px;
+}
+.contact .boxtext_contact {
+  padding: 20px;
+}
+.contact .boxtext_contact ul {
+  margin-bottom: 20px;
+}
+.contact .boxtext_contact ul li {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.contact .boxtext_contact span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.contact .boxtext_contact .logo_social {
+  width: 50px;
+}
+.contact .boxtext_contact .logo_social:hover {
+  box-shadow: 5px 5px 27px 13px #61ffca;
+}
+
 .footer {
   text-align: center;
   padding: 30px;
